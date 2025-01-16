@@ -8,7 +8,12 @@
 <body style="text-align: center; font-family: Arial, sans-serif;">
     <h1>Benvenuto!</h1>
     <p>Esplora i contenuti disponibili:</p>
-    <button onclick="location.href='/nasa'" style="padding: 10px 20px; font-size: 16px;">Vai a NASA</button>
-    <button onclick="location.href='/cat'" style="padding: 10px 20px; font-size: 16px; margin-left: 10px;">Vai ai fatti sui gatti</button>
+   <from action="/cat" method="get">
+    <button type="submit">scegli gatti</button>
+   </from>
+
+   <from action="/nasa" method="get">
+    <button type="submit">scegli nasa</button>
+   </from>
 </body>
 </html>
